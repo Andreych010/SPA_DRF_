@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from users.models import User
-from university.models import Lesson, Course
+from university.models import Lesson, Course, Payments
 
 
 @admin.register(User)
@@ -26,3 +26,9 @@ class LessonAdmin(admin.ModelAdmin):
     #         return "<a href='%s'>Link</a>" % obj.link_video
     #     else:
     #         return ''
+
+
+@admin.register(Payments)
+class PaymentsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'course', 'lesson', 'client', 'date_payment', 'amount_payment', 'method_payment',)
+    search_fields = ('client',)

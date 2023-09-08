@@ -1,0 +1,38 @@
+[
+{
+    "model": "university.payments",
+    "pk": 1,
+    "fields": {
+        "course": 1,
+        "lesson": 4,
+        "client": "Марчук",
+        "date_payment": "08.09.2023",
+        "amount_payment": 657447,
+        "method_payment": "spot"
+    }
+},
+{
+    "model": "university.payments",
+    "pk": 2,
+    "fields": {
+        "course": 8,
+        "lesson": 6,
+        "client": "Петрова",
+        "date_payment": "09.08.2023",
+        "amount_payment": 657447,
+        "method_payment": "cashless"
+    }
+},
+{
+    "model": "university.payments",
+    "pk": 3,
+    "fields": {
+        "course": 1,
+        "lesson": 5,
+        "client": "Марчук",
+        "date_payment": "10.09.2023",
+        "amount_payment": 657447,
+        "method_payment": "spot"
+    }
+}
+]

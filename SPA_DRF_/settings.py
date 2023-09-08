@@ -42,10 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    'django_filters',
 
     'users',
     'university'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -155,4 +162,3 @@ if CACHE_ENABLED:
     }
 
 TEMPLATE_CONTEXT_PROCESSORS = 'django.core.context_processors.request'
-
